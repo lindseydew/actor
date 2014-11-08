@@ -1,70 +1,30 @@
-[0m[[0minfo[0m] [0mUpdating {file:/Users/ldew/dev/study/scala-for-impatient/actor2/project/}actor2-build...[0m
-[0m[[0mdebug[0m] [0m:: resolving dependencies :: default#actor2-build;0.1-SNAPSHOT[0m
+[0m[[0minfo[0m] [0mUpdating {file:/Users/lindseydew/dev/study/actor/project/}actor-build...[0m
+[0m[[0mdebug[0m] [0m:: resolving dependencies :: default#actor-build;0.1-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
 [0m[[0mdebug[0m] [0m	refresh = false[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor2-build;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->default#global-plugins;0.0 [compile->default(compile)][0m
-[0m[[0minfo[0m] [0mResolving default#global-plugins;0.0 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: default#global-plugins;0.0 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m	found default#global-plugins;0.0 in inter-project[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#global-plugins;0.0->com.github.mpeltonen#sbt-idea;1.6.0 [compile->default(compile)][0m
-[0m[[0minfo[0m] [0mResolving com.github.mpeltonen#sbt-idea;1.6.0 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.mpeltonen#sbt-idea;1.6.0 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.mpeltonen#sbt-idea;1.6.0[0m
-[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: revision in cache: com.github.mpeltonen#sbt-idea;1.6.0[0m
-[0m[[0mdebug[0m] [0m	found com.github.mpeltonen#sbt-idea;1.6.0 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#global-plugins;0.0->com.github.mpeltonen#sbt-idea;1.6.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#global-plugins;0.0->com.github.mpeltonen#sbt-idea;1.6.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.6.0->commons-io#commons-io;2.0.1 [compile->master(*)][0m
-[0m[[0minfo[0m] [0mResolving commons-io#commons-io;2.0.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: commons-io#commons-io;2.0.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: commons-io#commons-io;2.0.1[0m
-[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: revision in cache: commons-io#commons-io;2.0.1[0m
-[0m[[0mdebug[0m] [0m	found commons-io#commons-io;2.0.1 in public[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.6.0->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.6.0->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.6.0->commons-io#commons-io;2.0.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#global-plugins;0.0->com.github.mpeltonen#sbt-idea;1.6.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor-build;0.1-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor2-build;0.1-SNAPSHOT [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor2-build;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->default#global-plugins;0.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#global-plugins;0.0->com.github.mpeltonen#sbt-idea;1.6.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#global-plugins;0.0->com.github.mpeltonen#sbt-idea;1.6.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#global-plugins;0.0->com.github.mpeltonen#sbt-idea;1.6.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.6.0->commons-io#commons-io;2.0.1 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.6.0->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.6.0->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.6.0->commons-io#commons-io;2.0.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#global-plugins;0.0->com.github.mpeltonen#sbt-idea;1.6.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor-build;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor-build;0.1-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor2-build;0.1-SNAPSHOT [test][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor2-build;0.1-SNAPSHOT [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor2-build;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->default#global-plugins;0.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#global-plugins;0.0->com.github.mpeltonen#sbt-idea;1.6.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#global-plugins;0.0->com.github.mpeltonen#sbt-idea;1.6.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#global-plugins;0.0->com.github.mpeltonen#sbt-idea;1.6.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.6.0->commons-io#commons-io;2.0.1 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.6.0->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.6.0->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.6.0->commons-io#commons-io;2.0.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#global-plugins;0.0->com.github.mpeltonen#sbt-idea;1.6.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor-build;0.1-SNAPSHOT [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor-build;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor-build;0.1-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor2-build;0.1-SNAPSHOT [provided][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor-build;0.1-SNAPSHOT [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#actor-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [provided->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4668b788[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@48c8d800[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	typesafe-ivy-releases: revision in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.3 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.10.3] org.scala-lang#scala-library;2.10.3[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [provided->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [provided->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.1 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#actor-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [provided->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#actor-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [provided->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#actor-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [provided->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#actor-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.1 [provided->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-sbt#sbt;0.13.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-sbt#sbt;0.13.1 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-sbt#sbt;0.13.1[0m
@@ -594,26 +554,17 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#precompiled-2_9_3;0.13.1->org.scala-lang#scala-library;2.10.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#precompiled-2_9_3;0.13.1->org.scala-sbt#interface;0.13.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'optional'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor2-build;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor-build;0.1-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor2-build;0.1-SNAPSHOT [compile-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor2-build;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->default#global-plugins;0.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#global-plugins;0.0->com.github.mpeltonen#sbt-idea;1.6.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#global-plugins;0.0->com.github.mpeltonen#sbt-idea;1.6.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#global-plugins;0.0->com.github.mpeltonen#sbt-idea;1.6.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.6.0->commons-io#commons-io;2.0.1 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.6.0->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.6.0->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.6.0->commons-io#commons-io;2.0.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#global-plugins;0.0->com.github.mpeltonen#sbt-idea;1.6.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor2-build;0.1-SNAPSHOT [optional][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor2-build;0.1-SNAPSHOT [provided][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [provided->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [provided->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [provided->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.1 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor-build;0.1-SNAPSHOT [compile-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor-build;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor-build;0.1-SNAPSHOT [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#actor-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#actor-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [provided->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#actor-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [provided->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#actor-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [provided->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#actor-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.1 [provided->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.13.1->org.scala-lang#scala-library;2.10.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.13.1->org.scala-lang#scala-library;2.10.3 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.13.1->org.scala-lang#scala-library;2.10.3 [compile->compile][0m
@@ -927,40 +878,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#precompiled-2_9_3;0.13.1->org.scala-lang#scala-library;2.10.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#precompiled-2_9_3;0.13.1->org.scala-sbt#interface;0.13.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor2-build;0.1-SNAPSHOT [runtime-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor2-build;0.1-SNAPSHOT [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor2-build;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->default#global-plugins;0.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#global-plugins;0.0->com.github.mpeltonen#sbt-idea;1.6.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#global-plugins;0.0->com.github.mpeltonen#sbt-idea;1.6.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#global-plugins;0.0->com.github.mpeltonen#sbt-idea;1.6.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.6.0->commons-io#commons-io;2.0.1 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.6.0->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.6.0->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.6.0->commons-io#commons-io;2.0.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#global-plugins;0.0->com.github.mpeltonen#sbt-idea;1.6.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor2-build;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor-build;0.1-SNAPSHOT [runtime-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor-build;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor-build;0.1-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor2-build;0.1-SNAPSHOT [test-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor2-build;0.1-SNAPSHOT [test][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor2-build;0.1-SNAPSHOT [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor2-build;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->default#global-plugins;0.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#global-plugins;0.0->com.github.mpeltonen#sbt-idea;1.6.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#global-plugins;0.0->com.github.mpeltonen#sbt-idea;1.6.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#global-plugins;0.0->com.github.mpeltonen#sbt-idea;1.6.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.6.0->commons-io#commons-io;2.0.1 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.6.0->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.6.0->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.6.0->commons-io#commons-io;2.0.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#global-plugins;0.0->com.github.mpeltonen#sbt-idea;1.6.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor2-build;0.1-SNAPSHOT [optional][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor2-build;0.1-SNAPSHOT [provided][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [provided->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [provided->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [provided->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.1 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor-build;0.1-SNAPSHOT [test-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor-build;0.1-SNAPSHOT [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor-build;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor-build;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor-build;0.1-SNAPSHOT [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#actor-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#actor-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [provided->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#actor-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [provided->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#actor-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [provided->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#actor-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.1 [provided->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.13.1->org.scala-lang#scala-library;2.10.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.13.1->org.scala-lang#scala-library;2.10.3 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.13.1->org.scala-lang#scala-library;2.10.3 [compile->compile][0m
@@ -1274,18 +1207,18 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#precompiled-2_9_3;0.13.1->org.scala-lang#scala-library;2.10.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#precompiled-2_9_3;0.13.1->org.scala-sbt#interface;0.13.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'plugin'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor2-build;0.1-SNAPSHOT [plugin][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor-build;0.1-SNAPSHOT [plugin][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'sources'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor2-build;0.1-SNAPSHOT [sources][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor-build;0.1-SNAPSHOT [sources][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'docs'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor2-build;0.1-SNAPSHOT [docs][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor-build;0.1-SNAPSHOT [docs][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'pom'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor2-build;0.1-SNAPSHOT [pom][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor-build;0.1-SNAPSHOT [pom][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'scala-tool'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor2-build;0.1-SNAPSHOT [scala-tool][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.3 [scala-tool->default][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.3 [scala-tool->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.3 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#actor-build;0.1-SNAPSHOT [scala-tool][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#actor-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.3 [scala-tool->default][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#actor-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.3 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#actor-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.3 [scala-tool->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.3->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.3->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.3->org.scala-lang#scala-library;2.10.3 [compile->default][0m
@@ -1303,8 +1236,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.3->org.scala-lang#scala-reflect;2.10.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.10.3->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.10.3->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.3 [scala-tool->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.3 [scala-tool->optional(default)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#actor-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.3 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#actor-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.3 [scala-tool->optional(default)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.3->org.scala-lang#jline;2.10.3 [optional->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#jline;2.10.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#jline;2.10.3 {optional=[compile(*), master(*)]}[0m
@@ -1319,15 +1252,13 @@
 [0m[[0mdebug[0m] [0m	typesafe-ivy-releases: revision in cache: org.fusesource.jansi#jansi;1.4[0m
 [0m[[0mdebug[0m] [0m	found org.fusesource.jansi#jansi;1.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#jline;2.10.3->org.fusesource.jansi#jansi;1.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [scala-tool->default][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [scala-tool->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [scala-tool->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [scala-tool->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#actor2-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [scala-tool->optional(default)][0m
-[0m[[0mdebug[0m] [0m	resolved ivy file produced in /Users/ldew/dev/study/scala-for-impatient/actor2/project/target/resolution-cache/default/actor2-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#actor-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [scala-tool->default][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#actor-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#actor-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#actor-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#actor-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [scala-tool->optional(default)][0m
+[0m[[0mdebug[0m] [0m	resolved ivy file produced in /Users/lindseydew/dev/study/actor/project/target/resolution-cache/default/actor-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.github.mpeltonen#sbt-idea;1.6.0!sbt-idea.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] commons-io#commons-io;2.0.1!commons-io.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.3!scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#sbt;0.13.1!sbt.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#main;0.13.1!main.jar[0m
@@ -1375,19 +1306,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.1!apply-macro.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.3!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 2602ms :: artifacts dl 52ms[0m
-[0m[[0mdebug[0m] [0m	report for default#actor2-build;0.1-SNAPSHOT compile produced in /Users/ldew/dev/study/scala-for-impatient/actor2/project/target/resolution-cache/reports/default-actor2-build-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#actor2-build;0.1-SNAPSHOT runtime produced in /Users/ldew/dev/study/scala-for-impatient/actor2/project/target/resolution-cache/reports/default-actor2-build-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#actor2-build;0.1-SNAPSHOT test produced in /Users/ldew/dev/study/scala-for-impatient/actor2/project/target/resolution-cache/reports/default-actor2-build-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#actor2-build;0.1-SNAPSHOT provided produced in /Users/ldew/dev/study/scala-for-impatient/actor2/project/target/resolution-cache/reports/default-actor2-build-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#actor2-build;0.1-SNAPSHOT optional produced in /Users/ldew/dev/study/scala-for-impatient/actor2/project/target/resolution-cache/reports/default-actor2-build-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#actor2-build;0.1-SNAPSHOT compile-internal produced in /Users/ldew/dev/study/scala-for-impatient/actor2/project/target/resolution-cache/reports/default-actor2-build-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#actor2-build;0.1-SNAPSHOT runtime-internal produced in /Users/ldew/dev/study/scala-for-impatient/actor2/project/target/resolution-cache/reports/default-actor2-build-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#actor2-build;0.1-SNAPSHOT test-internal produced in /Users/ldew/dev/study/scala-for-impatient/actor2/project/target/resolution-cache/reports/default-actor2-build-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#actor2-build;0.1-SNAPSHOT plugin produced in /Users/ldew/dev/study/scala-for-impatient/actor2/project/target/resolution-cache/reports/default-actor2-build-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#actor2-build;0.1-SNAPSHOT sources produced in /Users/ldew/dev/study/scala-for-impatient/actor2/project/target/resolution-cache/reports/default-actor2-build-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#actor2-build;0.1-SNAPSHOT docs produced in /Users/ldew/dev/study/scala-for-impatient/actor2/project/target/resolution-cache/reports/default-actor2-build-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#actor2-build;0.1-SNAPSHOT pom produced in /Users/ldew/dev/study/scala-for-impatient/actor2/project/target/resolution-cache/reports/default-actor2-build-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#actor2-build;0.1-SNAPSHOT scala-tool produced in /Users/ldew/dev/study/scala-for-impatient/actor2/project/target/resolution-cache/reports/default-actor2-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (2602ms resolve - 52ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 7937ms :: artifacts dl 192ms[0m
+[0m[[0mdebug[0m] [0m	report for default#actor-build;0.1-SNAPSHOT compile produced in /Users/lindseydew/dev/study/actor/project/target/resolution-cache/reports/default-actor-build-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#actor-build;0.1-SNAPSHOT runtime produced in /Users/lindseydew/dev/study/actor/project/target/resolution-cache/reports/default-actor-build-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#actor-build;0.1-SNAPSHOT test produced in /Users/lindseydew/dev/study/actor/project/target/resolution-cache/reports/default-actor-build-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#actor-build;0.1-SNAPSHOT provided produced in /Users/lindseydew/dev/study/actor/project/target/resolution-cache/reports/default-actor-build-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#actor-build;0.1-SNAPSHOT optional produced in /Users/lindseydew/dev/study/actor/project/target/resolution-cache/reports/default-actor-build-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#actor-build;0.1-SNAPSHOT compile-internal produced in /Users/lindseydew/dev/study/actor/project/target/resolution-cache/reports/default-actor-build-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#actor-build;0.1-SNAPSHOT runtime-internal produced in /Users/lindseydew/dev/study/actor/project/target/resolution-cache/reports/default-actor-build-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#actor-build;0.1-SNAPSHOT test-internal produced in /Users/lindseydew/dev/study/actor/project/target/resolution-cache/reports/default-actor-build-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#actor-build;0.1-SNAPSHOT plugin produced in /Users/lindseydew/dev/study/actor/project/target/resolution-cache/reports/default-actor-build-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#actor-build;0.1-SNAPSHOT sources produced in /Users/lindseydew/dev/study/actor/project/target/resolution-cache/reports/default-actor-build-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#actor-build;0.1-SNAPSHOT docs produced in /Users/lindseydew/dev/study/actor/project/target/resolution-cache/reports/default-actor-build-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#actor-build;0.1-SNAPSHOT pom produced in /Users/lindseydew/dev/study/actor/project/target/resolution-cache/reports/default-actor-build-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#actor-build;0.1-SNAPSHOT scala-tool produced in /Users/lindseydew/dev/study/actor/project/target/resolution-cache/reports/default-actor-build-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (7937ms resolve - 192ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

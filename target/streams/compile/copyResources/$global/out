@@ -1,0 +1,13 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/Users/lindseydew/dev/study/actor/src/main/resources/blogs,/Users/lindseydew/dev/study/actor/target/scala-2.10/classes/blogs)[0m
+[0m[[0mdebug[0m] [0m	(/Users/lindseydew/dev/study/actor/src/main/resources/blogs/scala,/Users/lindseydew/dev/study/actor/target/scala-2.10/classes/blogs/scala)[0m
+[0m[[0mdebug[0m] [0m	(/Users/lindseydew/dev/study/actor/src/main/resources/blogs/studying,/Users/lindseydew/dev/study/actor/target/scala-2.10/classes/blogs/studying)[0m
+[0m[[0mdebug[0m] [0m	(/Users/lindseydew/dev/study/actor/src/main/resources/blogs/work,/Users/lindseydew/dev/study/actor/target/scala-2.10/classes/blogs/work)[0m
+[0m[[0mdebug[0m] [0m	(/Users/lindseydew/dev/study/actor/src/main/resources/blogs/scala/conferences,/Users/lindseydew/dev/study/actor/target/scala-2.10/classes/blogs/scala/conferences)[0m
+[0m[[0mdebug[0m] [0m	(/Users/lindseydew/dev/study/actor/src/main/resources/blogs/scala/courses,/Users/lindseydew/dev/study/actor/target/scala-2.10/classes/blogs/scala/courses)[0m
+[0m[[0mdebug[0m] [0m	(/Users/lindseydew/dev/study/actor/src/main/resources/blogs/scala/conferences/scala-exchange-2013-why-representation-matters.md,/Users/lindseydew/dev/study/actor/target/scala-2.10/classes/blogs/scala/conferences/scala-exchange-2013-why-representation-matters.md)[0m
+[0m[[0mdebug[0m] [0m	(/Users/lindseydew/dev/study/actor/src/main/resources/blogs/scala/courses/scalala.md,/Users/lindseydew/dev/study/actor/target/scala-2.10/classes/blogs/scala/courses/scalala.md)[0m
+[0m[[0mdebug[0m] [0m	(/Users/lindseydew/dev/study/actor/src/main/resources/blogs/studying/chatting-to-students.md,/Users/lindseydew/dev/study/actor/target/scala-2.10/classes/blogs/studying/chatting-to-students.md)[0m
+[0m[[0mdebug[0m] [0m	(/Users/lindseydew/dev/study/actor/src/main/resources/blogs/studying/learning-to-code.md,/Users/lindseydew/dev/study/actor/target/scala-2.10/classes/blogs/studying/learning-to-code.md)[0m
+[0m[[0mdebug[0m] [0m	(/Users/lindseydew/dev/study/actor/src/main/resources/blogs/work/growth-hacking.md,/Users/lindseydew/dev/study/actor/target/scala-2.10/classes/blogs/work/growth-hacking.md)[0m
+[0m[[0mdebug[0m] [0m	(/Users/lindseydew/dev/study/actor/src/main/resources/blogs/work/writing-apps-to-scale.md,/Users/lindseydew/dev/study/actor/target/scala-2.10/classes/blogs/work/writing-apps-to-scale.md)[0m

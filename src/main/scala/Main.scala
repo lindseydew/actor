@@ -1,16 +1,22 @@
 
+import java.util.concurrent.TimeUnit
+
 import akka.actor._
 import akka.actor.Props
 import akka.actor.ActorSystem
 import akka.pattern.ask
 import akka.actor.ActorSystem
-
+import akka.util.Timeout
+import scala.concurrent.ExecutionContext
+import ExecutionContext.Implicits.global
 
 object Main extends App {
+
+
   val currentDir = System.getProperty("user.dir")
   val directory = new java.io.File(s"${currentDir}/src/main/resources/blogs")
 
-  val regex = "is".r
+  val regex = "[0-9]{2}/[0-9]{2}/[0-9]{4}".r
 
   Actor.controllerActor ! Traverse(directory)
 }
@@ -27,7 +33,8 @@ class CounterActor extends Actor {
 }
 
 class Controller extends Actor {
-
+  var children:Set[ActorRef] = Set.empty[ActorRef]
+  val accumulator = context.actorOf(Props[CounterActor])
   def receive = {
     case Traverse(directory) =>  {
       for {
@@ -35,64 +42,61 @@ class Controller extends Actor {
       }
       {
         if(dir.getPath().endsWith(".md")) {
-          println(dir.isDirectory)
-          Actor.readFileActor ! File(dir)
+          val readFile = context.actorOf(Props(new ReadFile(dir, accumulator)))
+          children += readFile
+          readFile ! Read
         }
-      }
+        else {
+          self ! Traverse(dir)
+        }
 
+      }
+    }
+    case Finished => {
+      children -= sender
+      if(children.size==0) {
+        implicit val timeout = new Timeout(1L, TimeUnit.SECONDS)
+        val total = accumulator ? CurrentTotal
+        total.foreach(t => println(s"total matching words are ${t}"))
+      }
     }
   }
 
 }
 
 
-class SubDirectories extends Actor {
 
-  var children:Set[ActorRef] = Set.empty[ActorRef]
 
+class ReadFile(file: java.io.File, acc: ActorRef) extends Actor {
   def receive = {
-    case Check(directory) => {
-      for {
-        dir <- directory.listFiles()
-      }
-      {
-        if(dir.getPath().endsWith(".md")) {
-          context.actorOf(Props(new ReadFile(dir)))
-        }
-      }
-    }
-  }
-}
-
-class ReadFile(file: java.io.File) extends Actor {
-  def receive = {
-    case File(file) => {
-      println("read file msg")
+    case Read => {
       for {
         line <- scala.io.Source.fromFile(file).getLines
         word <- line.split(" ")
       }{
         Main.regex.findFirstIn(word).foreach{ _ =>
-            Actor.countActor ! Match
+          acc ! Match
         }
       }
-      sender ! Finished
+      stop()
     }
+  }
+
+  def stop(): Unit = {
+    context.parent ! Finished
+    context.stop(self)
   }
 }
 
 
 case object Match
 case object CurrentTotal
-case class Check(val directory: java.io.File)
 case class Traverse(val directory: java.io.File)
 case object Finished
-case class File(val file: java.io.File)
+case object Read
 
 object Actor {
-  // ActorSystem is a heavy object: create only one per application
   val system = ActorSystem("mySystem")
-  val readFileActor =  system.actorOf(Props[ReadFile], "readfile")
-  val countActor = system.actorOf(Props[CounterActor], "count")
   val controllerActor = system.actorOf(Props[Controller], "controller")
 }
+
